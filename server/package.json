@@ -1,0 +1,29 @@
+{
+  "name": "health-app-server",
+  "version": "1.0.0",
+  "description": "Backend server for health monitoring app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "cors": "^2.8.5",
+    "helmet": "^5.1.1",
+    "morgan": "^1.10.0",
+    "sqlite3": "^5.0.11",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1",
+    "express-rate-limit": "^6.5.1",
+    "node-cron": "^3.0.2",
+    "ml-matrix": "^6.10.4",
+    "simple-statistics": "^7.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "keywords": ["health", "api", "analytics"],
+  "author": "Berkeley Health Team",
+  "license": "MIT"
+}

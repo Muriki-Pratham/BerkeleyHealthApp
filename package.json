@@ -1,0 +1,19 @@
+{
+  "name": "berkeley-health-app",
+  "version": "1.0.0",
+  "description": "Health monitoring app for tracking student wellness and disease trends",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": ["health", "monitoring", "students", "analytics"],
+  "author": "Berkeley Health Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
